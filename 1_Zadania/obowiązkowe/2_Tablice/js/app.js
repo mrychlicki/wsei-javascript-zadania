@@ -11,3 +11,21 @@ function distFromAverage(array){
         return element - average;
     })
 }
+
+
+
+
+
+function fruits(){
+    
+    fruit=['banan','malina','truskawka','mango'];
+    console.log(fruit[1]);
+     var z=fruit.length;
+    var last = fruit[z-1] ;   
+    console.log(last);
+    for(var i=0;i<fruit.length; i++){
+        console.log(fruit[i])
+    }
+
+}
+fruits();
