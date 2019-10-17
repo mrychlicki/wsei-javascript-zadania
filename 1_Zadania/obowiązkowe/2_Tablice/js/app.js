@@ -1,3 +1,13 @@
+function fruits(){	multiply([1,1,1,1]);
+
+    multiply([2,8,3,7]);
+        fruit=['banan','malina','truskawka','mango'];	//zadanie 5
+        console.log(fruit[1]);	function getEvenAvarage(array){
+         var z=fruit.length;	    var score = 0;
+        var last = fruit[z-1] ;   	    var counter = 0;
+        console.log(last);	    for(var i=0; i<array.length; i++){
+        for(var i=0;i<fruit.length; i++){	        if(array[i]%2==0){
+            console.log(fruit[i])
 //Zadanie 2 
 function createArray(number) {
     var newArray = [];
