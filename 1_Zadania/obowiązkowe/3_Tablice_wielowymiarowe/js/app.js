@@ -71,7 +71,7 @@ print2Darray([  [9,8,7],
 
 //zadanie 5
 function create2DArray(rows, columns){
-     arr = new Array(columns);
+     var arr = new Array(columns);
      var number = 0;
     for (var i = 0; i < columns; i++) {
         arr[i] = new Array(rows);
