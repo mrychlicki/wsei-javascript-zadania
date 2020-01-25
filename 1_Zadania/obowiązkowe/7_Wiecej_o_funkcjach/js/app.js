@@ -3,30 +3,27 @@
  * Przesledz krok po kroku kazda linijke kodu. Kazda!
  * Napisz komentarze dla kazdej z linijek kodu
  */
-
-
-//Twoj komentarz ...
+// Zadanie 0
+// Definicja funkcji jeden
 function jeden() {
-
-    //Twoj komentarz ...
+    // Definicja zmiennej zmienna1 oraz przypisanie wartości 1
     var zmienna1 = 1;
-
-    //Twoj komentarz ...
+  
+    // Funkcja dwa, zagnieżdżona w funkcji jeden
     function dwa() {
-
-        //Twoj komentarz ...
-        console.log(zmienna1);
-
-        //Twoj komentarz ...
-        var zmienna2 = 3;
+      // Wyświetlenie w konsoli wartości zmiennej zmienna1
+      console.log(zmienna1);
+  
+      // Definicja zmiennej zmienna2 oraz przypisanie wartości 3
+      var zmienna2 = 3;
     }
-
-    //Twoj komentarz ...
+  
+    // Wywowałanie funkcji dwa
     dwa();
-
-    //Twoj komentarz ...
-    console.log(zmienna2)
-}
-
-//Twoj komentarz ...
-jeden()
+  
+    // Wyświetlenie w konsoli wartości zmiennej zmienna2, zwróci ReferenceError, ponieważ zmienna ta została zdefioniowana wewnątrz funkcji dwa i nie jest dostępna poza nią
+    console.log(zmienna2);
+  }
+  
+  // Wywołanie funkcji jeden
+  jeden();

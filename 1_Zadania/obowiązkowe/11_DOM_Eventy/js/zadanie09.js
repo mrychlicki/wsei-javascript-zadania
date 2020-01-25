@@ -1,4 +1,5 @@
-document.addEventListener("DOMContentLoaded", function () {
+// Zadanie 9
+document.addEventListener("DOMContentLoaded", function() {
   var a = document.getElementById("a");
   var b = document.getElementById("b");
 
@@ -6,23 +7,25 @@ document.addEventListener("DOMContentLoaded", function () {
   // addEventListener to właśnie document)
   console.log("obiekt document: ", this);
 
-  a.addEventListener("click", function (event) {
+  a.addEventListener("click", function(event) {
     // Tutaj this wskazuje na element DOM o id a
     console.log("a: ", this);
   });
 
-  b.addEventListener("click", function (event) {
+  b.addEventListener("click", function(event) {
     // Tutaj this wskazuje na element DOM o id b
     console.log("b: ", this);
-
 
     function innerFuncOne() {
       // Tutaj this wskazuje na element Window, bo funkcja została
       //wywołana bez żadnego kontekstu.
-      console.log("innerFuncOne: ", this);
+      console.log("innerFuncOne: ", b);
     }
     innerFuncOne();
-
   });
+});
 
-})
+// a) Użyć funkcji strzałkowej bo przekazuje ona scope
+// const innerFuncOne = () => {}
+// b) użyć bind/apply i przekazać scope do funkcji innerFuncOne
+// c) w innerFuncOne -> console.log('innerFuncOne: ', b)
